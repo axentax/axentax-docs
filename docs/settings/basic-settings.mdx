@@ -1,0 +1,93 @@
+---
+sidebar_position: 1
+---
+
+# 設定変更方法
+
+Axentaxに設定画面はありません。全て構文によって設定します。
+
+## 構文
+
+### clickのアクセントを変更(デフォルト: 0)
+
+```
+set.click.accent: 0
+```
+
+### clickのインストを変更(デフォルト: 42)
+
+```
+set.click.inst: 42 // 36 37 42 がおすすめ
+```
+
+### 音長のデフォルト(1/1)を変更
+
+```
+set.click.until: 1/4
+```
+
+### clickの音量(デフォルト: 100)を変更
+
+```
+set.click.velocity: 65
+```
+
+### panningを無効化(デフォルト: true)
+
+```
+set.dual.pan: false
+```
+
+
+### panningの分散率を変更(デフォルト: [0.5, 0, 1])
+
+```
+set.set.dual.panning: [0.5, 0.2, 0.8]
+```
+
+### ストラム(弦ノイズ)の弦毎の出力間隔を変更(デフォルト: 30) ※msec
+
+```
+set.play.strum.defaultStrumWidthMSec: 30
+```
+
+### ストラム(弦ノイズ)の音量
+
+```
+set.play.strum.velocity: 70
+```
+
+### 弦毎のデフォルト音量を変更
+
+```
+set.play.velocities: 80|70|60|70|68|65
+```
+
+### BPMのデフォルト(120)を変更
+
+```
+set.style.bpm: 120
+```
+
+### チューニングのデフォルトを変更
+
+```
+set.style.tuning: C#|F#|B|E|A|D|G|B|E
+```
+
+### スケールのデフォルトを変更
+
+```
+set.style.scale: C diminish
+```
+
+### ディグリーのデフォルトを変更
+
+```
+set.style.degree: C harmonic minor 7th mode 3th
+```
+
+### その他
+
+コンパイラのオブジェクトから確認お願いします。\
+https://github.com/axentax/axentax-compiler/blob/main/dist/conductor.js#L3432

@@ -1,0 +1,14 @@
+.custom-github-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  mask: url('/img/github.svg') no-repeat center;
+  mask-size: contain;
+  background-color: currentColor;
+  margin-left: 1rem;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+.custom-github-icon:hover {
+  opacity: 1;
+}
