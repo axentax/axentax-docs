@@ -27,6 +27,7 @@ const sidebars: SidebarsConfig = {
       ],
       "collapsed": false
     },
+    'shortcut-keys',
     'xqa'
     // {
     //   type: 'category',
