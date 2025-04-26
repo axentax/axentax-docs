@@ -1,3 +1,14 @@
 .colorModeToggle_DEke {
   margin-left: 16px;
 }
+
+/* コードブロック */
+code {
+  background: #656565;
+  color: #f8f8f2;
+  border-radius: 8px;
+  padding: 0.2em;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre;
+}
