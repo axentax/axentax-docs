@@ -1,17 +1,16 @@
-name: Deploy Docusaurus to GitHub Pages
+name: Publish to axentax.github.io
 
 on:
   push:
     branches: [main]
 
-
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: false 
+          persist-credentials: false
 
       - uses: actions/setup-node@v4
         with:
@@ -20,15 +19,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build website
+      - name: Build site
         run: npm run build
 
-      - name: Setup git user
+      - name: Set git identity
         run: |
-          git config user.name  "axentax"
-          git config user.email "axentax@users.noreply.github.com"
+          git config --global user.name "axentax"
+          git config --global user.email "axentax@users.noreply.github.com"
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         env:
           GIT_USER: axentax
           GIT_PASS: ${{ secrets.GH_TOKEN }}

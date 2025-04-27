@@ -81,7 +81,7 @@ import { VscScreenFull } from "react-icons/vsc";
 
 ### 下部ボタン群
 
-- <FaFilm size="20px" style={{ verticalAlign: '-0.25em' }}/> 曲の再生とエディターのスクロールの連動ON/OFF切り替え
+- <FaFilm size="20px" style={{ verticalAlign: '-0.25em' }}/> 再生時のエディター追跡ON/OFF切り替え
 - <IoArrowUndo size="20px" style={{ verticalAlign: '-0.25em' }} /> UNDO
 - <IoArrowRedo size="20px" style={{ verticalAlign: '-0.25em' }} /> REDO
 - <FaEraser size="20px" style={{ verticalAlign: '-0.25em' }} /> Editorクリア（設定行は残ります）
@@ -90,6 +90,9 @@ import { VscScreenFull } from "react-icons/vsc";
 - <CiLight size="20px" style={{ verticalAlign: '-0.25em' }} /> Dark/Lightモード変更ボタン
 - <VscScreenFull size="20px" style={{ verticalAlign: '-0.25em' }} /> 大指板の表示非表示ボタン
 - <LuPanelRightOpen size="20px" style={{ verticalAlign: '-0.25em' }} /> 右サイドバー開閉
+
+:::warning 再生時のエディター追跡はコンパイル済み状態の時のみ有効です
+:::
 
 ### 右サイドバー
 

@@ -24,6 +24,7 @@ const sidebars: SidebarsConfig = {
       link: { type: 'generated-index' },
       items: [
         'settings/basic-settings',
+        'settings/sample-settings',
       ],
       "collapsed": false
     },

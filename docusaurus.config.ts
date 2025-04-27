@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Axentax',
-  tagline: '直感操作 x 高精度コントロール で、音楽制作を加速。',
+  tagline: '直感操作 x 高精度コントロール で、音楽制作を加速',
   favicon: 'img/axe/axentax-logo-small.png',
 
   // Set the production url of your site here
@@ -20,6 +20,9 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'axentax', // Usually your GitHub org/user name.
   projectName: 'axentax.github.io', // Usually your repo name.
+
+  deploymentBranch: 'main',
+  trailingSlash: true,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
