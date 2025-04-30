@@ -51,6 +51,13 @@ const config: Config = {
   ],
 
   themeConfig: {
+    algolia: {
+      appId: 'VEDZMZ5FGJ',
+      apiKey: 'a317dc225a2425f119ad605ca7f6ec1c',
+      indexName: 'axentaxio',
+      contextualSearch: true,
+      insights: true,
+    },
     colorMode: {
       defaultMode: 'dark'
     },
