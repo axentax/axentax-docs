@@ -151,6 +151,16 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-ZKWRB57L2Q', // GA4 の ID
+        anonymizeIP: true,
+      },
+    ],
+  ],
 };
 
 export default config;
