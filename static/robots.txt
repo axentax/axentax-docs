@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://axentax.github.io/sitemap.xml
